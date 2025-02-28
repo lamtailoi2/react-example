@@ -53,12 +53,12 @@ export default function UseStateDemo() {
                 <div>
                     <label htmlFor="name1">Name </label>
                     <input type="text" name="name1" id="name1" value={name1} className="border-2 border-gray-500" onChange={handleChange1} />
-                    <button onClick={() => setName1("Two-way binding")}>Click</button>
+                    <button className="bg-blue-400 w-20 rounded mx-2 p-2 text-center cursor-pointer" onClick={() => setName1("Two-way binding")}>Click</button>
                 </div>
-                <div className="">
+                <div>
                     <label htmlFor="name2">Name </label>
                     <input type="text" name="name2" id="name2" className="border-2 border-gray-500" onChange={handleChange2} />
-                    <button onClick={() => setName2("One-way binding")}>Click</button>
+                    <button className="bg-blue-400 w-20 rounded mx-2 p-2 text-center cursor-pointer" onClick={() => setName2("One-way binding")}>Click</button>
                 </div>
             </div>
         </div>
