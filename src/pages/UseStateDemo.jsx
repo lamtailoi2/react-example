@@ -3,10 +3,7 @@ import { useState } from "react"
 export default function UseStateDemo() {
 
     const [count, setCount] = useState(0)
-    const [count2, setCount2] = useState(0)
-    console.log("🚀 ~ UseStateDemo ~ count2:", count2)
     const [name1, setName1] = useState("")
-    const [myInterval, setMyInterval] = useState()
     console.log("🚀 ~ UseStateDemo ~ name1:", name1)
     const [name2, setName2] = useState("")
     console.log("🚀 ~ UseStateDemo ~ name2:", name2)
