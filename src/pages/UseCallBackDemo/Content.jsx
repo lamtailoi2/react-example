@@ -5,7 +5,7 @@ function Content({ onIncrease }) {
 
     return (
         <div className="flex flex-col gap-5">
-            <h1>Hello F-Codes</h1>
+            <h1>Hello F-Code</h1>
             <button className="bg-red-300" onClick={onIncrease}>Click</button>
         </div>
 
