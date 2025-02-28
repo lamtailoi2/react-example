@@ -22,32 +22,15 @@ export default function UseStateDemo() {
         setName2(e.target.value)
     }
 
-    const hanldeStart = () => {
-        setMyInterval(setInterval(() => {
-            setCount2(prev => prev + 1)
-        }, 1000))
-    }
-
-    const handleStop = () => {
-        clearInterval(myInterval)
-
-    }
-
 
     console.log("Re-render");
     return (
         <div className="flex flex-col justify-center items-center h-screen gap-y-[100px]">
             <div className="flex justify-center gap-5 items-center flex-col">
-                <div className="flex justify-center gap-5 items-center">
-                    <p className="text-5xl">Count: {count}</p>
-                    <button className="bg-blue-400 w-20 rounded p-2 text-center cursor-pointer" onClick={handleIncrease}>Click</button>
-                    <button className="bg-blue-400 w-20 rounded p-2 text-center cursor-pointer" onClick={() => setCount(0)}>Reset</button>
-                </div>
-                <div className="flex justify-center gap-5 items-center">
-                    <p className="text-5xl">Count With Interval: {count2}</p>
-                    <button className="bg-blue-400 w-20 rounded p-2 text-center cursor-pointer" onClick={hanldeStart}>Click</button>
-                    <button className="bg-blue-400 w-20 rounded p-2 text-center cursor-pointer" onClick={handleStop}>Reset</button>
-                </div>
+                <p className="text-5xl">Count: {count}</p>
+                <button className="bg-blue-400 w-20 rounded p-2 text-center cursor-pointer" onClick={handleIncrease}>Click</button>
+                <button className="bg-blue-400 w-20 rounded p-2 text-center cursor-pointer" onClick={() => setCount(0)}>Reset</button>
+
             </div>
             <div className="flex flex-col gap-5">
                 <div>
