@@ -1,16 +1,11 @@
-import { useContext } from "react"
-import { ThemeContext } from "./ThemeProvider"
+import C from "./C";
 
 export default function B() {
-    const { theme } = useContext(ThemeContext)
-
-
 
     return (
-        theme === 'dark' ? (<div className='bg-black h-1/2'>
-            <p className="text-white ">This is B component</p>
-        </div>) : (<div className='bg-white h-1/2'>
-            <p>This is B component</p>
-        </div>)
+        <div className="h-1/2 bg-amber-400">
+            <h1>This is B</h1>
+            <C />
+        </div>
     )
 }
