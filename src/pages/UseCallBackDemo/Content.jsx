@@ -3,6 +3,7 @@ import { memo } from "react";
 function Content({ onIncrease }) {
     console.log("Re-render from Content");
 
+
     return (
         <div className="flex flex-col gap-5">
             <h1>Hello F-Code</h1>

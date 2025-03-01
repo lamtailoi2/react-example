@@ -16,13 +16,13 @@ function App() {
                 path={route.path}
                 element={<route.component />}
               >
-                {route.childrenRoutes.map((childRoute, childIndex) => (
+                {/* {route.childrenRoutes.map((childRoute, childIndex) => (
                   <Route
                     key={childIndex}
                     path={childRoute.path}
                     element={<childRoute.component />}
                   />
-                ))}
+                ))} */}
               </Route>
             );
           }
