@@ -6,6 +6,7 @@ import UseCallBackDemo from "../pages/UseCallBackDemo/UseCallBackDemo";
 import NotFound from "../pages/NotFound";
 import UseMemoDemo from "../pages/UseMemoDemo";
 import UseRefDemo from "../pages/UseRefDemo";
+import UseReducerDemo from "../pages/UseReducerDemo";
 const publicRoutes = [
     { path: "use-state", component: UseStateDemo },
     { path: "use-effect", component: UseEffectDemo },
@@ -14,6 +15,7 @@ const publicRoutes = [
     { path: "use-callback", component: UseCallBackDemo },
     { path: "use-memo", component: UseMemoDemo },
     { path: "use-ref", component: UseRefDemo },
+    { path: "use-reducer", component: UseReducerDemo },
     { path: "*", component: NotFound }
 ]
 
