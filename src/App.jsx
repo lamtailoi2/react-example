@@ -3,7 +3,7 @@ import { publicRoutes } from "./routes";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-example">
       <Routes>
         {publicRoutes.map((route, index) => {
           if (route.isIndex) {
