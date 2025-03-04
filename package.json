@@ -4,6 +4,7 @@
   "homepage": "https://github.com/lamtailoi2/react-example.git",
   "version": "0.0.0",
   "type": "module",
+  "homepage": "react-example",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
